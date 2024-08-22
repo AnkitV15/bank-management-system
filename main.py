@@ -1,6 +1,7 @@
 # main.py
 
 from bank import Bank
+from utils import random_utils
 
 def main():
     bank = Bank()
@@ -17,7 +18,8 @@ def main():
         choice = input("Enter your choice: ")
 
         if choice == "1":
-            account_number = input("Enter account number: ")
+            account_number = str(random_utils.random_num_gen(11))
+            print(f"Owner account Number: {account_number}")
             owner_name = input("Enter owner name: ")
             initial_deposit = float(input("Enter initial deposit: "))
             bank.create_account(account_number, owner_name, initial_deposit)
