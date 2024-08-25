@@ -9,6 +9,7 @@ This project implements a basic bank management system using Python. The system 
 - **Bank Class**: Manages bank accounts, including creating new accounts and finding existing ones.
 - **Account Class**: Represents individual bank accounts with attributes for account number, owner name, and balance.
 - **Basic Operations**: Includes methods for depositing and withdrawing funds from accounts.
+- **Transaction Class**: Manages the transacation record history of individual accounts.
 
 ## Installation
 
