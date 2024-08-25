@@ -15,7 +15,8 @@ def main():
         print("5. Transfer")
         print("6. Transaction history")
         print("7. All Transactions")
-        print("8. Exit")
+        print("8. Delete Account")
+        print("9. Exit")
 
         choice = input("Enter your choice: ")
 
@@ -66,6 +67,10 @@ def main():
             bank.all_transaction_history()
 
         elif choice == "8":
+            account_number = input("Enter account number: ")
+            bank.delete_account(account_number)
+        
+        elif choice == "9":
             print("Exiting...")
             break
 

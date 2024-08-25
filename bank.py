@@ -60,3 +60,11 @@ class Bank:
                 else:
                     for transaction in transaction_history:
                         print(transaction)
+
+    def delete_account(self, account_number):
+        if account_number in self.accounts:
+            # new_account = self.find_account(account_number)
+            print(f"Account Deleted for {self.accounts[account_number].owner_name} with account number {account_number}.")
+            del self.accounts[account_number]
+        else:
+            print("Account not exists or is deleted")
